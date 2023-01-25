@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>교수학습도움센터에 오신 것을 환영합니다.</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="교수학습도움센터">
+		<meta name="Keywords" content="교수학습도움센터">
+		<meta name="Description" content="교수학습도움센터">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/sub.css" />
+		<script type="text/javascript" src="js/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/design/gnb.js"></script>
+		<script type="text/javascript" src="js/design/lnb.js"></script>
+		<script type="text/javascript" src="js/design/topMenu.js"></script>
+
+		 <script type="text/javascript">
+				$(document).ready(function(){
+				  var currentPosition = parseInt($("#quickMenu1").css("top"));
+				  $(window).scroll(function() {
+					var position = $(window).scrollTop(); 
+					$("#quickMenu1").stop().animate({"top":position+currentPosition+"px"},1000);
+				  });
+				});
+
+				$(document).ready(function(){
+				  var fileTarget = $('.filebox .upload-hidden');
+
+					fileTarget.on('change', function(){
+						if(window.FileReader){
+							var filename = $(this)[0].files[0].name;
+						} else {
+							var filename = $(this).val().split('/').pop().split('\\').pop();
+						}
+
+						$(this).siblings('.upload-name').val(filename);
+					});
+				}); 
+		 </script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="logo">
+				<!-- //로고 영역 -->
+				<h1><a href="#" target="_blank"><img src="../../common/images/logo.png" alt="교수학습도움센터" /></a></h1>
+			</div>
+			<hr/>
+
+			<div class="spot_box">
+				<div class="web_spot_box">
+					<!-- //스팟 영역 로그인 전-->
+					<h2 class="blind">로그인 전/회원가입</h2>
+					<ul class="spot_before">	
+						<li><a href="#">본문바로가기</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>						
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+					
+					<!-- //스팟 영역 로그인 후-->
+					<h2 class="blind">로그인 후</h2>
+					<div class="spot_after" style="display:none;">
+						<p class="spot_after1"><span>홍길동</span> 님이 로그인하셨습니다.</p>
+						<p class="spot_after2"><a href="#">로그아웃</a></p>
+					</div><!-- //spot_after -->
+				</div><!-- //web_spot_box -->
+			</div><!-- //spot_box -->
+			<hr/>		</div><!-- //wrapper -->
+		
+
+		<!-- //주메뉴 영역 -->
+		<h2 class="blind">주메뉴</h2>
+		<div class="gnb_border"></div><!-- //gnb_border -->
+		<div id="realheader">
+			<div id="headerwrap">
+				<div id="header">
+					<ul id="gnb">
+						<li class="m1"><a href="#">학교소개</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>
+
+						<li class="m2"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>         
+
+						<li class="m3"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m4"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m5"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m6"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m7"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 	
+						
+						<li class="m8"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m9"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+					</ul>
+
+					<div class="m10">
+						<a class="gnbplus" href="#">+</a>
+						<ul>
+							<li>메뉴 더보기</li>
+							<li><a href="#">추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+						</ul>
+					</div>
+				</div><!-- //header -->
+			</div><!-- //headerwrap -->
+		</div><!-- //realheader -->
+
+		<div id="mobile_menu">
+			<p class="ico_allMenu">
+				<a href="#allMenu"><img src="../../common/images/ico_allmenu.png" alt="전체메뉴"></a>
+			</p>
+			<hr>
+
+			<h2 class="hidden">전체메뉴</h2>
+			<nav id="allMenu" style="display:none">	
+				<div class="login_Ment">					
+					<p class="allmenu_login"><a href="#">로그인</a></p>
+					<p class="tit"><span class="login_name">- 홍길동님 -</span></p>
+				</div><!-- //login_Ment -->
+
+				<dl id="lnb">
+					<dt class="hidden">전체메뉴</dt>
+					<dd>
+						<ul class="depth01">	
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+						
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>					
+						</ul>			
+					</dd>
+				</dl>
+
+				<div class="quick_menu2" id="quickMenu2">
+					<div class="quick_box2" id="quick_box2">
+						<div class="site">
+							<h4>퀵메뉴 바로가기</h4>
+							<ul>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							</ul>
+						</div><!-- //site -->
+					</div><!-- //quick_box -->
+				</div><!-- //quick_menu -->		
+			</nav>
+			<a href="#mobile_menu" id="cover" style="display: block;"></a>
+			<hr/>
+		</div><!-- //mobile_menu -->
+
+		<h3 class="hidden">서브비주얼</h3>
+		<div class="sub_visual"></div><!-- //sub_visual -->
+		<hr/>
+
+		<div class="location_bg"></div>
+		<div class="location">
+			<a class="location-home" href="http://startup.inha.ac.kr/index.htm"></a>
+			<div class="location-depth">
+				<div class="location-depth-btn">	
+					<a href="#">학교소개</a>
+				</div><!-- //location-depth-btn -->
+				
+				<ul>	
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>					
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>		
+				</ul>				
+			</div><!-- //location-depth -->
+				
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">최대길이여덟글자</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+		</div><!-- //location -->
+
+		<div id="container">
+			<div class="cont_left">
+				<div class="lnb">
+					<h4>학교소개</h4>
+					<ul class="deps1">
+						<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브111</a>
+							<ul class="deps2">
+								<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브222</a>
+									<ul class="deps3">
+										<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브333</a>
+											<ul class="deps4">
+												<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브444</a>
+													<ul class="deps5">
+														<li><a class="lnb_on" href="#" title="학교장인사말 메뉴 링크">서브555</a></li>
+														<li><a href="#" title="학교장인사말 메뉴 링크">서브555</a></li>
+													</ul>												
+												</li>
+												<li><a class="group_off"  href="#" title="학교장인사말 메뉴 링크">서브444</a></li>
+											</ul>										
+										</li>
+										<li><a href="#" title="학교장인사말 메뉴 링크">서브333</a></li>
+									</ul>								
+								</li>
+								<li><a href="#" title="학교장인사말 메뉴 링크">서브222</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+					</ul>
+				</div>	
+			</div><!-- //cont_left -->
+			<hr/>
+
+			<div class="cont_right">
+				<p class="m_sub_tit"><span class="m_now_locate">학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;<b>학교장인사말</b></span></p>
+				<p class="sub_tit"><span>원장인사말</span><span class="now_locate">학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;<b>학교장인사말</b></span></p>		
+				
+				<div class="sub_comment1">
+					<ul>
+						<li>본 사이트는 대한민국 저작권법을 준수합니다.</li>
+						<li>회원은 공공질서나 미풍양속에 위배되는 내용과 타인의 저작권을 포함한 지적재산권 및 기타 권리를 침해하는 내용물에 대하여는 등록할 수 없으며, 만일 이와 같은 내용의 게시물로 인해 발생하는 결과에 대한 모든 책임은 회원 본인에게 있습니다.</li>
+						<li>개인정보보호법에 의거하여 주민번호, 휴대폰번호, 집주소 혈액형, 직업 등의 게시나 등록을 금지합니다.</li>
+						<li>학교홈페이지의 학교행사사진에서 정보주체가 삭제요구시 동의하에 삭제처리를 하겠습니다.</li>
+					</ul>   
+				</div><!-- //sub_comment1 -->
+
+				<p class="heading">
+					<b class="compulsory">★</b> <b>표시 항목은 <span>필수 입력 항목</span>입니다.</b><br/>
+					<b class="compulsory">★</b> <b>토론은 등록 후 <span>수정이 불가능</span> 합니다.등록에 유의 하시기 바랍니다.</b>
+				</p>
+
+				<form id="#" name="#" method="post" action="#">
+					<fieldset>
+						<legend>게시글 등록</legend>
+						<table class="board_view board_write" summary="게시판 등록입니다." >
+							<caption>게시판 등록</caption>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;카테고리</td>
+								<td>
+									<select id="#" name="#" title="카테고리 선택">
+										<option value="">전체</option>
+										<option value="#" selected="selected">멀티게시판</option>
+										<option value="#">멀티게시판</option>
+										<option value="#">멀티게시판</option>
+										<option value="#">멀티게시판</option>
+										<option value="#">멀티게시판</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;제목</td>
+								<td>
+									<label class="blind" for="#">년도선택</label>
+									<select id="#" name="#" title="색상 선택">
+										<option value="">색상</option>
+										<option class="Font_Black" value="Font_Black" selected="selected">검정</option>
+										<option class="Font_Gray" value="Font_Gray">회색</option>
+										<option class="Font_Yellow" value="Font_Yellow">노랑</option>
+										<option class="Font_Orange" value="Font_Orange">주황</option>
+										<option class="Font_Red" value="Font_Red">빨강</option>
+										<option class="Font_Brown" value="Font_Brown">갈색</option>
+										<option class="Font_Pink" value="Font_Pink">분홍</option>
+										<option class="Font_Purple" value="Font_Purple">보라</option>
+										<option class="Font_Purple2" value="Font_Purple2">자주</option>
+										<option class="Font_Green" value="Font_Green">연두</option>
+										<option class="Font_Green2" value="Font_Green2">청녹</option>
+										<option class="Font_Blue" value="Font_Blue">파랑</option>
+									</select>
+									<input class="text" title="제목 입력" type="text" value="">
+									<p class="write_size">현재 0&nbsp;/&nbsp;최대 100 Bytes (한글50자)</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;장소</td>
+								<td><input class="text" title="장소 입력" type="text" value=""></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;작성자</td>
+								<td>관리자</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;참여대상</td>
+								<td>
+									<ul class="join_select">
+										<li>
+											<input type="checkbox" value="0" title="손님 선택" checked="">
+											<label>손님</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="학부모 선택" checked="">
+											<label>학부모</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="일반인 선택" checked="">
+											<label>일반인</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="학생 선택" checked="">
+											<label>학생</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="졸업생 선택" checked="">
+											<label>졸업생</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="외부강사 선택" checked="">
+											<label>외부강사</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="교직원 선택" checked="">
+											<label>교직원</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="선생님 선택" checked="">
+											<label>선생님</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;기간</td>
+								<td>
+									<select id="#" name="#">
+										<option value="#">2021년</option>
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>
+									</select>
+									<label for="#" class="blind">년</label>
+
+									<select id="#" name="#">
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+									</select>
+									<label for="#" class="blind">월</label>
+
+									<select id="#" name="#">
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+									</select>
+									<label for="#">부터</label>
+									<br/>
+
+									<select id="#" name="#">
+										<option value="#">2021년</option>
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>
+									</select>
+									<label for="#" class="blind">년</label>
+
+									<select id="#" name="#">
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+									</select>
+									<label for="#" class="blind">월</label>
+
+									<select id="#" name="#">
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+									</select>
+									<label for="#">까지</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;발표기간</td>
+								<td>
+									<select id="#" name="#">
+										<option value="#">2021년</option>
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>
+									</select>
+									<label for="#" class="blind">년</label>
+
+									<select id="#" name="#">
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+									</select>
+									<label for="#" class="blind">월</label>
+
+									<select id="#" name="#">
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+									</select>
+									<label for="#">부터</label>
+									<br/>
+
+									<select id="#" name="#">
+										<option value="#">2021년</option>
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>
+									</select>
+									<label for="#" class="blind">년</label>
+
+									<select id="#" name="#">
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+									</select>
+									<label for="#" class="blind">월</label>
+
+									<select id="#" name="#">
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+									</select>
+									<label for="#">까지</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;조회조건1</td>
+								<td><input class="text" title="장소 입력" type="text" value=""><br/>
+								<b class="red_font mar_top">예시) 수험번호, 전화번호 등…</b></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;조회조건2</td>
+								<td><input class="text" title="장소 입력" type="text" value=""><br/>
+								<b class="red_font mar_top">예시) 이름, 전화번호 등…</b></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;합격자명단</td>
+								<td>
+									<!-- <input class="#" title="링크 입력" type="file"> -->
+									<div class="filebox"> 
+										<input class="upload-name" value="파일선택" disabled="disabled"> 
+										<label for="ex_filename" class="bs3-primary">업로드</label> 
+										<input type="file" id="ex_filename" class="upload-hidden"> 
+									</div><!-- //filebox -->
+									<a class="white_btn mar_top" href="#">합격자명단 <b class="green_font">엑셀 샘플</b></a>&nbsp;<a class="white_btn mar_top" href="#">합격자명단 <b class="green_font">한셀 샘플</b></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;합격메세지</td>
+								<td><textarea></textarea></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;불합격메세지</td>
+								<td><textarea></textarea></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;등록일</td>
+								<td>									
+									<select id="#" name="#">
+										<option value="#">2021년</option>
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>	
+										<option value="#">2021년</option>
+									</select>
+									<label for="#" class="blind">년</label>
+
+									<select id="#" name="#">
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+										<option value="#">1월</option>
+										<option value="#">12월</option>	
+									</select>
+									<label for="#" class="blind">월</label>
+
+									<select id="#" name="#">
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+										<option value="#">1일</option>
+										<option value="#">12일</option>	
+									</select>
+									<label for="#" class="blind">일</label>
+
+									<select id="#" name="#">
+										<option value="#">1시</option>
+										<option value="#">12시</option>	
+										<option value="#">1시</option>
+										<option value="#">12시</option>	
+									</select>
+									<label for="#" class="blind">시</label>
+
+									<select id="#" name="#">
+										<option value="#">1분</option>
+										<option value="#">12분</option>	
+										<option value="#">1분</option>
+										<option value="#">12분</option>	
+									</select>
+									<label for="#" class="blind">분</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">이메일</td>
+								<td><input class="text" title="이메일 입력" type="text" value=""></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">링크</td>
+								<td><input class="text" title="링크 입력" type="text" value="http://"></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;본문표시방식</td>
+								<td>
+									<input type="radio">&nbsp;<label>에디터</label>&nbsp;<input type="radio">&nbsp;<label>웹뷰(PDF 첨부)</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;PDF 첨부</td>
+								<td>
+									<!-- <input class="#" title="링크 입력" type="file"> -->
+									<div class="filebox"> 
+										<input class="upload-name" value="파일선택" disabled="disabled"> 
+										<label for="ex_filename" class="bs3-primary">업로드</label> 
+										<input type="file" id="ex_filename" class="upload-hidden"> 
+									</div><!-- //filebox -->
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">첨부하기</td>
+								<td>
+									<ul class="board_write_btn">
+										<li><a class="white_btn" href="#">파일첨부</a></li>
+										<li><a class="white_btn" href="#">이미지첨부</a></li>
+										<li><a class="white_btn" href="#">동영상첨부</a></li>
+										<li><a class="white_btn" href="#">음악첨부</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;내용</td>
+								<td>
+									<ul class="board_write_btn">
+										<li><a class="white_btn" href="#">에디터보기</a></li>
+										<li><a class="white_btn" href="#">Html보기</a></li>
+										<li><a class="white_btn edit_on" href="#">에디터보기</a></li>
+										<li><a class="white_btn edit_on" href="#">Html보기</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6">에디터</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">파일갯수 제한</td>
+								<td>0개&nbsp;/&nbsp;<b class="red_font">무제한</b></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">파일용량 제한</td>
+								<td>0.00 KB&nbsp;/&nbsp;<b class="red_font">무제한</b></td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">공지글 설정</td>
+								<td>
+									<input type="checkbox" value="0" title="공지글 여부 선택" checked="">
+									<label>공지글 여부</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="board_view_tit">첨부된 이미지</td>
+								<td>
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+
+									<div class="add_img_box">
+										<div class="add_img">
+											<p><img src="../../common/images/add_img.png" alt="첨부된이미지" /></p>
+											<p class="add_img_btn"><a class="regist_btn" href="#">삽입</a>&nbsp;<a class="del_btn" href="#">삭제</a></p>
+										</div><!-- //add_img -->
+
+										<div class="add_img_cont">
+											<p class="add_img_tit">이미지이미지이미지이미지이미지이미지이미지이미지.png</p>
+											<p class="add_img_size">688.62 KB</p>
+										</div><!-- //add_img_cont -->
+									</div><!-- //add_img_box -->
+								</td>
+							</tr>
+							<tr>
+							  <td class="board_view_tit">첨부파일</td>
+							  <td class="file">
+									<img class="hwp" src="../../common/images/file_hwp.png" alt="파일첨부" />&nbsp;<a href="#">한글파일한글파일한글파일한글파일한글파일한글파일한글파일한글파일한글파일.hwp</a><br/>
+									<img class="img" src="../../common/images/file_img.png" alt="파일첨부" />&nbsp;<a href="#">이미지파일이미지파일이미지파일이미지파일이미지파일이미지파일이미지파일이미지파일이미지파일.png</a><br/>
+									<img class="pdf" src="../../common/images/file_pdf.png" alt="파일첨부" />&nbsp;<a href="#">PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일PDF파일.pdf</a><br/>
+									<img class="doc" src="../../common/images/file_doc.png" alt="파일첨부" />&nbsp;<a href="#">워드파일워드파일워드파일워드파일워드파일워드파일워드파일워드파일워드파일워드파일워드파일.doc</a><br/>
+									<img class="xls" src="../../common/images/file_xls.png" alt="파일첨부" />&nbsp;<a href="#">엑셀파일엑셀파일엑셀파일엑셀파일엑셀파일엑셀파일엑셀파일엑셀파일엑셀파일.xls</a><br/>
+									<img class="ppt" src="../../common/images/file_ppt.png" alt="파일첨부" />&nbsp;<a href="#">파워포인트파일파워포인트파일파워포인트파일파워포인트파일파워포인트파일파워포인트파일파워포인트파일.ppt</a><br/>
+									<img class="mov" src="../../common/images/file_mov.png" alt="파일첨부" />&nbsp;<a href="#">동영상파일동영상파일동영상파일동영상파일동영상파일동영상파일동영상파일동영상파일동영상파일동영상파일.mp4</a><br/>
+									<img class="mp3" src="../../common/images/file_mp3.png" alt="파일첨부" />&nbsp;<a href="#">음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일음악파일.mp3</a><br/>
+									<img class="zip" src="../../common/images/file_zip.png" alt="파일첨부" />&nbsp;<a href="#">압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일압축파일.zip</a><br/>
+									<img class="odt" src="../../common/images/file_odt.png" alt="파일첨부" />&nbsp;<a href="#">odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일odt파일.odt</a><br/>
+									<img class="etc" src="../../common/images/file_etc.png" alt="파일첨부" />&nbsp;<a href="#">기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일기타파일</a>
+							  </td>
+							</tr>
+						</table>
+						
+						<div class="privacy_ment">
+							※ <b>개인정보침해,저작권을 포함한 지적재산권(폰트,이미지,영상등)침해,기타권리의 침해, 유해정보</b> 등의 내용을 게시하면 안됩니다. 이를 지키지않으면 <b>저작권법 및 개인정보보호법에 따라 처벌</b>을 받을수 있습니다.
+							<div class="ment_agree"><p><input type="checkbox" value="0" title="확인 선택" checked="">&nbsp;<label>확인</label></p></div>
+						</div><!-- //privacy_ment -->
+					</fieldset>
+				</form>
+
+				<div class="board_btn">
+					<div class="board_btn_l">
+						<a class="list_btn" href="#">목록</a>
+					</div><!-- //board_btn_l -->
+					<div class="board_btn_r">
+						<a class="regist_btn" href="#">등록</a>&nbsp;<a class="del_btn" href="#">취소</a>
+					</div><!-- //board_btn_r -->
+				</div><!-- //board_btn -->
+				<hr/>
+			</div><!-- //cont_right -->
+			
+			<div class="quick_menu1" id="quickMenu1">
+				<p class="quick_icon1">Quick<br/>Menu<span><span></p>
+				<div class="quick_box1" id="quick_box1">
+					<div class="site">
+						<h4>퀵메뉴 바로가기</h4>
+						<ul>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+						</ul>
+					</div><!-- //site -->
+				</div><!-- //quick_box -->
+			</div><!-- //quick_menu -->		
+		</div><!-- //container -->
+		<hr/>
+
+		<div id="footer">
+			<div class="footer_box">
+				<ul class="privacy">
+					<li class="foot_privacy"><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li class="foot_cctv"><a href="#"><strong>영상정보처리기기운영관리방침</strong></a></li>
+					<li class="foot_copyright"><a href="#"><strong>저작권보호방침</strong></a></li>
+				</ul>
+				<address>
+					Copyright ⓒ ○○ 초등학교. All Rights Reserved.<br/>
+					(000-000) 서울특별시 ○○구 ○○○동 ○○번지<br/>
+					Tel : 02-000-0000, Fax : 02-000-0000<br/>
+					* 저작물의 무단 전재 및 배포시 최고 5년 이하의 징역 또는 5천만원 이하의 벌금에 처할 수 있습니다. 
+				</address>
+				
+				<p class="wah_mark">※ 본 사이트는 웹접근성 및 웹표준을 지원합니다.<img src="../../common/images/edu.png" alt="와스쿨" /></p>
+				<div class="total_count">
+					<ul>
+						<li><b>Today</b> 100명</li>
+						<li><b>Total</b> 2,000,000명</li>
+					</ul>
+				</div>
+			</div><!-- //footer_box -->
+		</div><!-- //footer -->
+	</body>
+</html>

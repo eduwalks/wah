@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>교수학습도움센터에 오신 것을 환영합니다.</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="교수학습도움센터">
+		<meta name="Keywords" content="교수학습도움센터">
+		<meta name="Description" content="교수학습도움센터">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/sub.css" />
+		<script type="text/javascript" src="js/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/design/gnb.js"></script>
+		<script type="text/javascript" src="js/design/lnb.js"></script>
+		<script type="text/javascript" src="js/design/topMenu.js"></script>
+
+		 <script type="text/javascript">
+				$(document).ready(function(){
+				  var currentPosition = parseInt($("#quickMenu1").css("top"));
+				  $(window).scroll(function() {
+					var position = $(window).scrollTop(); 
+					$("#quickMenu1").stop().animate({"top":position+currentPosition+"px"},1000);
+				  });
+				});
+
+				$(document).ready(function(){
+				  var fileTarget = $('.filebox .upload-hidden');
+
+					fileTarget.on('change', function(){
+						if(window.FileReader){
+							var filename = $(this)[0].files[0].name;
+						} else {
+							var filename = $(this).val().split('/').pop().split('\\').pop();
+						}
+
+						$(this).siblings('.upload-name').val(filename);
+					});
+				}); 
+		 </script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="logo">
+				<!-- //로고 영역 -->
+				<h1><a href="#" target="_blank"><img src="../../common/images/logo.png" alt="교수학습도움센터" /></a></h1>
+			</div>
+			<hr/>
+
+			<div class="spot_box">
+				<div class="web_spot_box">
+					<!-- //스팟 영역 로그인 전-->
+					<h2 class="blind">로그인 전/회원가입</h2>
+					<ul class="spot_before">	
+						<li><a href="#">본문바로가기</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>						
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+					
+					<!-- //스팟 영역 로그인 후-->
+					<h2 class="blind">로그인 후</h2>
+					<div class="spot_after" style="display:none;">
+						<p class="spot_after1"><span>홍길동</span> 님이 로그인하셨습니다.</p>
+						<p class="spot_after2"><a href="#">로그아웃</a></p>
+					</div><!-- //spot_after -->
+				</div><!-- //web_spot_box -->
+			</div><!-- //spot_box -->
+			<hr/>		</div><!-- //wrapper -->
+		
+
+		<!-- //주메뉴 영역 -->
+		<h2 class="blind">주메뉴</h2>
+		<div class="gnb_border"></div><!-- //gnb_border -->
+		<div id="realheader">
+			<div id="headerwrap">
+				<div id="header">
+					<ul id="gnb">
+						<li class="m1"><a href="#">학교소개</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>
+
+						<li class="m2"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>         
+
+						<li class="m3"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m4"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m5"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m6"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m7"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 	
+						
+						<li class="m8"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m9"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+					</ul>
+
+					<div class="m10">
+						<a class="gnbplus" href="#">+</a>
+						<ul>
+							<li>메뉴 더보기</li>
+							<li><a href="#">추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+						</ul>
+					</div>
+				</div><!-- //header -->
+			</div><!-- //headerwrap -->
+		</div><!-- //realheader -->
+
+		<div id="mobile_menu">
+			<p class="ico_allMenu">
+				<a href="#allMenu"><img src="../../common/images//ico_allmenu.png" alt="전체메뉴"></a>
+			</p>
+			<hr>
+
+			<h2 class="hidden">전체메뉴</h2>
+			<nav id="allMenu" style="display:none">	
+				<div class="login_Ment">					
+					<p class="allmenu_login"><a href="#">로그인</a></p>
+					<p class="tit"><span class="login_name">- 홍길동님 -</span></p>
+				</div><!-- //login_Ment -->
+
+				<dl id="lnb">
+					<dt class="hidden">전체메뉴</dt>
+					<dd>
+						<ul class="depth01">	
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+						
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>					
+						</ul>			
+					</dd>
+				</dl>
+
+				<div class="quick_menu2" id="quickMenu2">
+					<div class="quick_box2" id="quick_box2">
+						<div class="site">
+							<h4>퀵메뉴 바로가기</h4>
+							<ul>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							</ul>
+						</div><!-- //site -->
+					</div><!-- //quick_box -->
+				</div><!-- //quick_menu -->		
+			</nav>
+			<a href="#mobile_menu" id="cover" style="display: block;"></a>
+			<hr/>
+		</div><!-- //mobile_menu -->
+
+		<h3 class="hidden">서브비주얼</h3>
+		<div class="sub_visual"></div><!-- //sub_visual -->
+		<hr/>
+
+		<div class="location_bg"></div>
+		<div class="location">
+			<a class="location-home" href="http://startup.inha.ac.kr/index.htm"></a>
+			<div class="location-depth">
+				<div class="location-depth-btn">	
+					<a href="#">학교소개</a>
+				</div><!-- //location-depth-btn -->
+				
+				<ul>	
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>					
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>		
+				</ul>				
+			</div><!-- //location-depth -->
+				
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">최대길이여덟글자</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+
+			<div class="location-depth">						
+				<div class="location-depth-btn">	
+					<a href="#">학교장인사말</a>
+				</div><!-- //location-depth-btn -->
+						
+				<ul>
+					<li class="on"><a href="#" target="_self">학교장인사말</a></li>						
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+					<li><a href="#" target="_self">학교장인사말</a></li>	
+				</ul>
+			</div><!-- //location-depth -->	
+		</div><!-- //location -->
+
+		<div id="container">
+			<div class="cont_left">
+				<div class="lnb">
+					<h4>학교소개</h4>
+					<ul class="deps1">
+						<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브111</a>
+							<ul class="deps2">
+								<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브222</a>
+									<ul class="deps3">
+										<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브333</a>
+											<ul class="deps4">
+												<li><a class="lnb_on group_on" href="#" title="학교장인사말 메뉴 링크">서브444</a>
+													<ul class="deps5">
+														<li><a class="lnb_on" href="#" title="학교장인사말 메뉴 링크">서브555</a></li>
+														<li><a href="#" title="학교장인사말 메뉴 링크">서브555</a></li>
+													</ul>												
+												</li>
+												<li><a class="group_off"  href="#" title="학교장인사말 메뉴 링크">서브444</a></li>
+											</ul>										
+										</li>
+										<li><a href="#" title="학교장인사말 메뉴 링크">서브333</a></li>
+									</ul>								
+								</li>
+								<li><a href="#" title="학교장인사말 메뉴 링크">서브222</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+						<li><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+					</ul>
+				</div>	
+			</div><!-- //cont_left -->
+			<hr/>
+
+			<div class="cont_right">
+				<p class="m_sub_tit"><span class="m_now_locate">학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;<b>학교장인사말</b></span></p>
+				<p class="sub_tit"><span>원장인사말</span><span class="now_locate">학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;학교장인사말&nbsp;&gt&nbsp;<b>학교장인사말</b></span></p>
+
+				<div class="meal_admin_box">
+					<div class="meal_admin_bg"></div>
+					<div class="meal_admin_btn"><a class="white_btn" href="#">관리자 등록</a></div>
+					<div class="meal_admin">
+						<div class="meal_admin_pic"><img src="../../common/images//meal_admin.png" alt="관리자" /></div>
+						<div class="meal_admin_cont">
+							<b>※ 급식식단을 관리할 <span class="red_font">영양사 선생님</span>을 등록해주세요.</b>
+							<p><b>- 등록된 관리자가 없습니다.</b></p>
+						</div>
+					</div><!-- //meal_admin -->
+				</div><!-- //meal_admin_box -->
+
+				<div class="schedule_move">
+					<p><span><a href="#">◀</a></span>&nbsp;&nbsp;<span>2021년 7월 급식 정보</span>&nbsp;&nbsp;<span><a href="#">▶</a></span></p>
+					<div><a href="#"><span>조</span>&nbsp;식</a>&nbsp;<a href="#"><span>중</span>&nbsp;식</a>&nbsp;<a href="#"><span>석</span>&nbsp;식</a></div>
+				</div>
+
+				<table class="schedule_base schedule_month meal_month" summary="일정 목록입니다." >
+					<caption>일정 목록보기</caption>
+					<thead>
+						<tr>
+							<th>일</th>
+							<th>월</th>
+							<th>화</th>
+							<th>수</th>
+							<th>목</th>
+							<th>금</th>
+							<th>토</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td class="sunday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="today">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="saturday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td class="sunday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="saturday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td class="sunday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="saturday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td class="sunday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="saturday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td class="sunday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td>
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+							<td class="saturday">
+								<p class="cal_day"><a href="#">1</a><a class="white_btn" href="#">등록/수정</a></p>
+								<p class="today_cont"><a href="#">일정일정일정일정일정일정일정일정일정일정일정일정일정일정일정</a></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="allergy_info"><span><b>알레르기</b> 정보</span></p>
+				<div class="allergy_cont">알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기알레르기</div>
+				<hr/>
+
+				<form id="#" name="#" method="post" action="#">
+					<fieldset>
+						<legend>게시글 등록</legend>
+						<p class="meal_total_tit">알레르기 정보 입력</p>
+						<table class="board_view board_write" summary="게시판 등록입니다." >
+							<caption>게시판 등록</caption>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;알레르기<br/>정보</td>
+								<td><textarea></textarea></td>
+							</tr>
+						</table>
+						<div class="board_btn">
+							<div class="board_btn_r">
+								<a class="regist_btn" href="#">등록</a>
+							</div><!-- //board_btn_r -->
+						</div><!-- //board_btn -->
+						<hr/>
+	
+						<p class="meal_total_tit">급식 사용 설정</p>
+						<table class="board_view board_write" summary="게시판 등록입니다." >
+							<caption>게시판 등록</caption>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;설정</td>
+								<td>	
+									<ul class="join_select">
+										<li>
+											<input type="checkbox" value="0" title="조식 선택" checked="">
+											<label>조식</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="중식 선택" checked="">
+											<label>중식</label>
+										</li>
+										<li>
+											<input type="checkbox" value="0" title="석식 선택" checked="">
+											<label>석식</label>
+										</li>
+									</ul>
+									<b class="red_font mar_top">※조식, 중식, 석식 중 선택한 식단을 서비스합니다.<br/>(단, 중식은 기본 설정으로 해제가 불가능합니다.)</b>
+								</td>
+							</tr>
+						</table>
+						<div class="board_btn">
+							<div class="board_btn_r">
+								<a class="regist_btn" href="#">등록</a>
+							</div><!-- //board_btn_r -->
+						</div><!-- //board_btn -->
+						<hr/>
+
+						<p class="meal_total_tit">월간식단 엑셀등록</p>
+						<table class="board_view board_write board_meal" summary="게시판 등록입니다." >
+							<caption>게시판 등록</caption>
+							<tr>
+								<td class="board_view_tit"><b class="compulsory">★</b>&nbsp;식단등록</td>
+								<td>
+									<div class="filebox"> 
+										<span>조식 : </span>
+										<input class="upload-name" value="파일선택" disabled="disabled"> 
+										<label for="ex_filename" class="bs3-primary">업로드</label> 
+										<input type="file" id="ex_filename" class="upload-hidden"> 
+									</div><!-- //filebox -->
+
+									<div class="filebox"> 
+										<span>중식 : </span>
+										<input class="upload-name" value="파일선택" disabled="disabled"> 
+										<label for="ex_filename" class="bs3-primary">업로드</label> 
+										<input type="file" id="ex_filename" class="upload-hidden"> 
+									</div><!-- //filebox -->
+
+									<div class="filebox"> 
+										<span>석식 : </span>
+										<input class="upload-name" value="파일선택" disabled="disabled"> 
+										<label for="ex_filename" class="bs3-primary">업로드</label> 
+										<input type="file" id="ex_filename" class="upload-hidden"> 
+									</div><!-- //filebox -->
+									<b class="red_font mar_top">※ 나이스에서 다운받은 월간식단 엑셀파일을 등록하시면 됩니다.</b></td>
+								</td>
+							</tr>
+						</table>
+						<div class="board_btn">
+							<div class="board_btn_r">
+								<a class="regist_btn" href="#">등록</a>
+							</div><!-- //board_btn_r -->
+						</div><!-- //board_btn -->
+						<hr/>
+						<br/><br/>
+					</fieldset>
+				</form>
+
+			</div><!-- //cont_right -->
+			
+			<div class="quick_menu1" id="quickMenu1">
+				<p class="quick_icon1">Quick<br/>Menu<span><span></p>
+				<div class="quick_box1" id="quick_box1">
+					<div class="site">
+						<h4>퀵메뉴 바로가기</h4>
+						<ul>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images//quick.png" alt="퀵메뉴" /></a></li>
+						</ul>
+					</div><!-- //site -->
+				</div><!-- //quick_box -->
+			</div><!-- //quick_menu -->		
+		</div><!-- //container -->
+		<hr/>
+
+		<div id="footer">
+			<div class="footer_box">
+				<ul class="privacy">
+					<li class="foot_privacy"><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li class="foot_cctv"><a href="#"><strong>영상정보처리기기운영관리방침</strong></a></li>
+					<li class="foot_copyright"><a href="#"><strong>저작권보호방침</strong></a></li>
+				</ul>
+				<address>
+					Copyright ⓒ ○○ 초등학교. All Rights Reserved.<br/>
+					(000-000) 서울특별시 ○○구 ○○○동 ○○번지<br/>
+					Tel : 02-000-0000, Fax : 02-000-0000<br/>
+					* 저작물의 무단 전재 및 배포시 최고 5년 이하의 징역 또는 5천만원 이하의 벌금에 처할 수 있습니다. 
+				</address>
+				
+				<p class="wah_mark">※ 본 사이트는 웹접근성 및 웹표준을 지원합니다.<img src="../../common/images/edu.png" alt="와스쿨" /></p>
+				<div class="total_count">
+					<ul>
+						<li><b>Today</b> 100명</li>
+						<li><b>Total</b> 2,000,000명</li>
+					</ul>
+				</div>
+			</div><!-- //footer_box -->
+		</div><!-- //footer -->
+	</body>
+</html>

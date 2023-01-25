@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>교수학습도움센터에 오신 것을 환영합니다.</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Generator" content="EditPlus">
+		<meta name="Author" content="교수학습도움센터">
+		<meta name="Keywords" content="교수학습도움센터">
+		<meta name="Description" content="교수학습도움센터">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,minimum-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/design/lnb.js"></script>
+		<script type="text/javascript" src="js/design/topMenu.js"></script>
+		<script type="text/javascript" src="js/design/rolling.js"></script>
+		<script type="text/javascript" src="js/design/banner.js"></script>
+
+		 <script type="text/javascript">
+				$(document).ready(function(){
+				  var currentPosition = parseInt($("#quickMenu1").css("top"));
+				  $(window).scroll(function() {
+					var position = $(window).scrollTop(); 
+					$("#quickMenu1").stop().animate({"top":position+currentPosition+"px"},1000);
+				  });
+					goMove();
+				});
+		 </script>
+
+		<script type="text/javascript">
+			$(document).ready(
+				function(){
+					$('#pop_area').innerfade({
+						animationtype: 'slide',
+						speed: 2500,
+						timeout: 3000,
+						containerheight: '1em'
+					});
+				}
+			);
+		</script>
+
+		<script type="text/javascript">
+			 $(document).ready(function(){
+			   
+			  $('ul.tabs li').click(function(){
+				var tab_id = $(this).attr('data-tab');
+			 
+				$('ul.tabs li').removeClass('current');
+				$('.tab_content').removeClass('current');
+			 
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('current');
+			  })		
+
+			  $('ul.tabs1 li').click(function(){
+				var tab_id = $(this).attr('data-tab');
+			 
+				$('ul.tabs1 li').removeClass('current1');
+				$('.tab_content1').removeClass('current1');
+			 
+				$(this).addClass('current1');
+				$("#"+tab_id).addClass('current1');
+			  })		
+			})
+ 		</script>
+
+		<script type="text/javascript">
+			$(function(){
+
+				//Hide SubLevel Menus
+				$('#header ul li ul').hide();
+
+				//OnHover Show SubLevel Menus
+				$('#header ul li').hover(
+					//OnHover
+					function(){
+						//Hide Other Menus
+						$('#header ul li').not($('ul', this)).stop();
+
+						//Add the Arrow
+						$('ul li:first-child', this).before(
+							'<li class="arrow">arrow</li>'
+						);
+
+						//Remove the Border
+						$('ul li.arrow', this).css('border-bottom', '0');
+
+						// Show Hoved Menu
+						$('ul', this).slideDown();
+					},
+					//OnOut
+					function(){
+						// Hide Other Menus
+						$('ul', this).slideUp();
+
+						//Remove the Arrow
+						$('ul li.arrow', this).remove();
+					}
+				);
+			}); 
+		</script>
+	</head>
+
+	<body>
+		<div id="top_pop">
+			<div class="top_pop_box">
+				<p class="pop_tit">우리학교 주요팝업 알림</p>
+				<div class="pop_area">
+					<ul id="pop_area">
+						<li><a href="#"><span>[팝업1]&nbsp;</span>코로나관련 원격수업 안내코로나관련 원격수업 안내코로나관련 원격수업 안내코로나관련 원격수업 안내</a></li>
+						<li><a href="#"><span>[팝업2]&nbsp;</span>여름철물놀이예방</a></li>
+						<li><a href="#"><span>[팝업3]&nbsp;</span>상단배너팝업존상단배너팝업존상단배너팝업존</a></li>
+						<li><a href="#"><span>[팝업4]&nbsp;</span>무더위열대야무더위열대야무더위열대야무더위열대야무더위열대야무더위열대야</a></li>
+					</ul>
+				</div><!-- //pop_area -->
+				<div class="close_area">
+					<span>
+						<input type="checkbox" title="하루동안 열지않기 선택"> <label for="close_today">하루동안 열지않기</label>
+					</span>
+					<a href="#close" class="close" onclick="$('#top_pop').slideUp(400);">닫기</a>
+				</div><!-- //close_area -->
+			</div><!-- //top_pop_box -->
+		</div><!-- //top_pop -->
+
+		<div class="top_bg">
+		</div><!-- //top_bg -->
+
+		<div id="wrapper">
+			<div class="logo">
+				<!-- //로고 영역 -->
+				<h1><a href="#" target="_blank"><img src="../../common/images/logo.png" alt="교수학습도움센터" /></a></h1>
+			</div>
+			<hr/>
+
+			<div class="spot_box">
+				<div class="web_spot_box">
+					<!-- //스팟 영역 로그인 전-->
+					<h2 class="blind">로그인 전/회원가입</h2>
+					<ul class="spot_before" style="display:none;">	
+						<li><a href="#">본문바로가기</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">통합검색</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+					
+					<!-- //스팟 영역 로그인 후-->
+					<h2 class="blind">로그인 후</h2>
+					<div class="spot_after">
+						<p class="spot_after1"><span>홍길동</span> 님이 로그인하셨습니다.</p>
+						<p class="spot_after2"><a href="#">마이페이지</a></p>
+						<p class="spot_after3"><a href="#">로그아웃</a></p>
+						<p class="admin"><a href="#">관리자</a></p>
+					</div><!-- //spot_after -->
+				</div><!-- //web_spot_box -->
+			</div><!-- //spot_box -->
+			<hr/>
+
+			<!-- <form id="total_searchform" name="#" method="post" action="#">
+				<fieldset>
+					<legend>게시글 검색</legend>			
+					<label class="blind" for="searchkeyword">검색어</label>
+					<input class="search_txt" id="searchkeyword" name="searchkeyword" value="" autocomplete="off" type="text">
+					<a class="search_btn" href="#">검색</a>
+				</fieldset>
+			</form> -->
+		</div><!-- //wrapper -->
+		
+
+		<!-- //주메뉴 영역 -->
+		<h2 class="blind">주메뉴</h2>
+		<div class="gnb_border"></div><!-- //gnb_border -->
+		<div id="realheader">
+			<div id="headerwrap">
+				<div id="header">
+					<ul id="gnb">
+						<li class="m1"><a href="#">학교소개</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>
+
+						<li class="m2"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li>         
+
+						<li class="m3"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m4"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m5"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m6"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m7"><a href="#">최대길이여덟글자</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 	
+						
+						<li class="m8"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+
+						<li class="m9"><a href="#">학급홈페이지</a>
+							<ul>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교시설개방민원창구</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+								<li><a href="#">학교장인사말</a></li>
+							</ul>
+						</li> 
+					</ul>
+
+					<div class="m10">
+						<a class="gnbplus" href="#">+</a>
+						<ul>
+							<li>메뉴 더보기</li>
+							<li><a href="#">추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1추가메뉴1추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+							<li><a href="#">추가메뉴1</a></li>
+						</ul>
+					</div>
+				</div><!-- //header -->
+			</div><!-- //headerwrap -->
+		</div><!-- //realheader -->
+
+		<div id="mobile_menu">
+			<p class="ico_allMenu">
+				<a href="#allMenu"><img src="../../common/images/ico_allmenu.png" alt="전체메뉴"></a>
+			</p>
+			<hr>
+
+			<h2 class="hidden">전체메뉴</h2>
+			<nav id="allMenu" style="display:none">	
+				<div class="login_Ment">					
+					<p class="allmenu_login"><a href="#">로그인</a></p>
+					<p class="tit"><span class="login_name">- 홍길동님 -</span></p>
+				</div><!-- //login_Ment -->
+
+				<dl id="lnb">
+					<dt class="hidden">전체메뉴</dt>
+					<dd>
+						<ul class="depth01">	
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+						
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>
+
+							<li class="group">
+								<a class="top" href="#">학교소개</a>
+								<ul class="depth02" style="display: none;">
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>
+									<li class="menu"><a href="#" title="학교장인사말 메뉴 링크">학교장인사말</a></li>	
+								</ul>
+							</li>					
+						</ul>			
+					</dd>
+				</dl>
+
+				<div class="quick_menu2" id="quickMenu2">
+					<div class="quick_box2" id="quick_box2">
+						<div class="site">
+							<h4>퀵메뉴 바로가기</h4>
+							<ul>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+								<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							</ul>
+						</div><!-- //site -->
+					</div><!-- //quick_box -->
+				</div><!-- //quick_menu -->		
+			</nav>
+			<a href="#mobile_menu" id="cover" style="display: block;"></a>
+			<hr/>
+		</div><!-- //mobile_menu -->
+
+		<div id="container">
+			<div class="asset_tab">
+				<h4 class="blind">탭어셋</h4>
+				<ul class="tabs">
+					<li class="tab_link current" data-tab="asset1">공지사항</li>
+					<li class="tab_link" data-tab="asset2">우리학교앨범</li>
+				</ul>
+
+				<div id="asset1" class="tab_content current">
+					<!-- //목록형 -->
+					<div class="asset_list">
+						<ul>
+							<li><span class="notice">공지</span><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><span class="notice">공지</span><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+							<li><a href="#">어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트어셋리스트</a><span class="date">2021.01.01</span></li>
+						</ul>
+					</div><!-- //asset_list -->
+					<p class="more"><a href="#"></a></p>
+				</div>
+
+				<div id="asset2" class="tab_content">
+					<!-- //앨범형 -->
+					<div class="asset_album">
+						<dl>
+							<dt><a class="no_pic" href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a class="no_pic" href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a class="no_pic" href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd>2021.01.01</dd>
+							<dd>관리자</dd>
+						</dl>							
+					</div><!-- //asset_album -->
+					<p class="more"><a href="#"></a></p>
+				</div>
+				<hr/>			
+			</div><!-- //asset_tab -->
+
+			<h3 class="hidden">메인비주얼</h3>
+			<div class="main_visual">
+				<img src="images/main_visual.png" alt="메인비주얼" />
+			</div><!-- //main_visual -->
+			<hr/>
+
+			<div class="asset_tab1">
+				<h4 class="blind">탭어셋</h4>
+				<ul class="tabs1">
+					<li class="tab_link1 current1" data-tab="asset4">학교일정</li>
+					<li class="tab_link1" data-tab="asset5">우리학교급식</li>
+				</ul>
+
+				<div id="asset4" class="tab_content1 current1">
+						<!-- //일정형 -->
+						<p class="schedule_month">2020년 08월</p>
+						<table class="asset_schedule" summary="일정 목록입니다." >
+							<caption>일정 목록보기</caption>
+							<thead>
+								<tr>
+									<th>일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td class="sunday">
+										<p class="cal_day"><a href="#">22</a></p>										
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<div class="mouse_on">
+											<p class="cal_day"><a href="#">22</a></p>
+											<p class="m_overday">오늘의일정내용내용내용</p>
+										</div>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td class="saturday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="sunday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td class="today">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<div class="mouse_on">
+											<p class="cal_day"><a href="#">22</a></p>
+											<p class="m_overday">오늘의일정내용내용내용오늘의일정내용내용내용오늘의일정내용내용내용오늘의일정내용내용내용</p>
+										</div>
+									</td>
+									<td class="saturday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="sunday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td class="saturday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="sunday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td class="saturday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="sunday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<div class="mouse_on">
+											<p class="cal_day"><a href="#">22</a></p>
+											<p class="m_overday">오늘의일정내용내용내용오늘의일정내용내용내용오늘의일정내용내용내용오늘의일정내용내용내용</p>
+										</div>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td>
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+									<td class="saturday">
+										<p class="cal_day"><a href="#">22</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<p class="more"><a href="#"></a></p>
+				</div>
+
+				<div id="asset5" class="tab_content1">
+					<!-- //급식형 -->
+					<div class="school_meal">
+						<a href="#" target="_blank"><img src="../../common/images/main_meal_pic.png" alt="급식사진" /></a>
+						<p>2021.01.01</p>
+						<div>오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.오늘의 급식 정보가 없습니다.</div>
+					</div><!-- //school_meal -->
+					<p class="more"><a href="#"></a></p>
+				</div>
+				<hr/>			
+			</div><!-- //asset_tab1 -->
+
+			<div class="asset5">
+				<h4>설문조사</h4>
+				<div class="asset_box">
+					<!-- //설문조사형 -->
+					<div class="vote_box">
+						<p class="vote_tit">전교어린이회장을 뽑아주세요.전교어린이회장을 뽑아주세요.전교어린이회장을 뽑아주세요.</p>
+						<div class="vote">
+							<ul class="poll_q">
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<p><textarea></textarea></p>
+								</li>
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<ul>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+									</ul>
+								</li>
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<p><textarea></textarea></p>
+								</li>
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<ul>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+									</ul>
+								</li>
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<p><textarea></textarea></p>
+								</li>
+								<li>
+									<p>1. 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+									<ul>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+										<li><input type="radio">&nbsp;<label>객관문답11111</label></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="poll_btn">
+							<a class="vote_btn" href="#">투표하기</a>&nbsp;<a class="result_btn" href="#">결과보기</a>
+						</div><!-- //poll_btn -->
+					</div><!-- //vote_box -->
+				</div><!-- //asset_box -->
+				<p class="more"><a href="#"></a></p>
+			</div><!-- //asset5 -->
+
+			<div class="asset6">
+				<h4>방과후학교</h4>
+				<div class="asset_box">
+					<!-- //웹진형 -->
+					<div class="asset_webzine">	
+						<dl>
+							<dt><a class="no_pic" href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd><span>관리자</span><span></span></dd>
+							<dd><span>조회수 : 0</span><span>2021.01.01</span></dd>
+							<dd>추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd><p><a href="#">앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범앨범</a></p></dd>
+							<dd><span>관리자</span><span></span></dd>
+							<dd><span>조회수 : 0</span><span>2021.01.01</span></dd>
+							<dd>추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트추천사이트</dd>
+						</dl>							
+					</div><!-- //asset_webzine -->
+				</div><!-- //asset_box -->
+				<p class="more"><a href="#"></a></p>
+			</div><!-- //asset6 -->
+
+			<div class="asset7">
+				<h4>일기예보</h4>
+				<div class="asset_box">
+					<!-- //일기예보형 -->
+					<div class="asset_weather">
+						<p class="weather_locate"><a href="#"><span class="now_locate">현재위치</span></a><span class="city">인천광역시</span></p>
+						<div class="weather">
+							<p><span class="weather_ico"></span><span class="txt_info"><em class="txt_temp">26<span class="txt_unit">°c</span></em></span></p>
+							<p class="weather_cont">맑음, 어제보다 2°C 낮아요.</p>
+							<dl class="weather_etc">
+								<dt>습도</dt> 
+								<dd>58%</dd> 
+								<dt>북동풍</dt> 
+								<dd>2.7m/s</dd> 
+								<dt>체감</dt> 
+								<dd>27˚C</dd> 
+							</dl>
+							<ul class="air_detail">
+								<li>
+									<span class="txt_type">초미세먼지</span> 
+									<span class="ico_weather1"></span> 
+									<span class="txt_state1">좋음</span> 
+									<span class="txt_num1">10&nbsp;<span class="txt_unit">㎍/㎥</span></span>
+								</li>
+								<li>
+									<span class="txt_type">미세먼지</span> 
+									<span class="ico_weather2"></span> 
+									<span class="txt_state2">보통</span> 
+									<span class="txt_num2">18&nbsp;<span class="txt_unit">㎍/㎥</span></span>
+								</li>
+								<li>
+									<span class="txt_type">오존</span> 
+									<span class="ico_weather3"></span> 
+									<span class="txt_state3">나쁨</span> 
+									<span class="txt_num3">0.029&nbsp;<span class="txt_unit">ppm</span></span>
+								</li>
+								<li>
+									<span class="txt_type">황사</span> 
+									<span class="ico_weather4"></span> 
+									<span class="txt_state4">매우나쁨</span> 
+									<span class="txt_num4">7&nbsp;<span class="txt_unit">㎍/㎥</span></span>
+								</li>
+							</ul>
+							</p>
+						</div><!-- //weather -->
+					</div><!-- //asset_weather -->
+				</div><!-- //asset_box -->
+				<p class="more"><a href="#"></a></p>
+			</div><!-- //asset7 -->
+
+			<div class="banner_box">
+				<h4>배너모음</h4>
+				<div class="nav">
+					<button onClick="moveType=0;"><img src="../../common/images/banner_left.png" alt="왼쪽으로" /></button>  
+					<button onClick="moveType=1;"><img src="../../common/images/banner_right.png" alt="오른쪽으로" /></button>  
+					<button onClick="movePause=true;"><img src="../../common/images/banner_stop.png" alt="일시정지" /></button>  
+					<button onClick="goMove();"><img src="../../common/images/banner_start.png" alt="움직이기" /></button>  
+					<a href="#" target="_blank"><img src="../../common/images/banner_all.png" alt="전체보기" /></a>
+				</div>
+				<div class="RollDiv">
+ 					<div>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+						<a href="#" target="_blank"><img src="../../common/images/banner.png" alt="배너" /></a>
+ 					</div>
+				</div>
+			</div><!-- //banner_box -->
+
+			<div class="quick_menu1" id="quickMenu1">
+				<p class="quick_icon1">Quick<br/>Menu<span><span></p>
+				<div class="quick_box1" id="quick_box1">
+					<div class="site">
+						<h4>퀵메뉴 바로가기</h4>
+						<ul>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+							<li><a href="#" target="_blank"><img src="../../common/images/quick.png" alt="퀵메뉴" /></a></li>
+						</ul>
+					</div><!-- //site -->
+				</div><!-- //quick_box -->
+			</div><!-- //quick_menu -->		
+		</div><!-- //container -->
+		<hr/>
+
+		<div id="footer">
+			<div class="footer_box">
+				<ul class="privacy">
+					<li class="foot_privacy"><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li class="foot_cctv"><a href="#"><strong>영상정보처리기기운영관리방침</strong></a></li>
+					<li class="foot_copyright"><a href="#"><strong>저작권보호방침</strong></a></li>
+				</ul>
+				<address>
+					Copyright ⓒ ○○ 초등학교. All Rights Reserved.<br/>
+					(000-000) 서울특별시 ○○구 ○○○동 ○○번지<br/>
+					Tel : 02-000-0000, Fax : 02-000-0000<br/>
+					* 저작물의 무단 전재 및 배포시 최고 5년 이하의 징역 또는 5천만원 이하의 벌금에 처할 수 있습니다. 
+				</address>
+				
+				<p class="wah_mark">※ 본 사이트는 웹접근성 및 웹표준을 지원합니다.<img src="../../common/images/edu.png" alt="와스쿨" /></p>
+				<div class="total_count">
+					<ul>
+						<li><b>Today</b> 100명</li>
+						<li><b>Total</b> 2,000,000명</li>
+					</ul>
+				</div>
+			</div><!-- //footer_box -->
+		</div><!-- //footer -->
+	</body>
+</html>
